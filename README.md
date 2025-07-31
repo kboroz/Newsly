@@ -1,4 +1,4 @@
-# Newsly
+# Newsly aka. Wickert-AI auf Llama3.2-Basis ;-)
 
 Dieser Code beschreibt einen dynamischen Nachrichtenassistenten, der Nachrichten von Deutschlandfunk nicht nur abruft, sondern auch intelligent verarbeitet. Er bietet dem Benutzer eine prägnante Zusammenfassung und eine interaktive Frage-Antwort-Funktion. Hier ist eine lebendige Zusammenfassung der Funktionsweise und Idee dieses Agents:
 Projektstruktur und Einrichtung
