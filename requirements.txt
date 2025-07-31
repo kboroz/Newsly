@@ -1,0 +1,11 @@
+streamlit>=1.20
+requests
+beautifulsoup4
+sentence-transformers
+faiss-cpu
+gtts
+langchain>=0.0.234
+huggingface-hub>=0.14.1
+langchain-community
+
+
