@@ -2,7 +2,9 @@
 
 "From LLMs to AI Agents" (https://edu.opencampus.sh/course/563) 
 
-The goal is a dynamic news assistant that not only fetches news from Deutschlandfunk but also processes it intelligently. It provides the user with a concise summary and an interactive question-answer function.
+The goal is a dynamic news assistant that not only fetches news from Deutschlandfunk but also processes it intelligently. 
+
+It provides the user with a concise summary and an interactive question-answer function.
 
 The language model used is Llama3.2 – which can be replaced with other models depending on the available hardware.
 
