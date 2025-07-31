@@ -1,12 +1,8 @@
 # Newsly aka. Wickert-AI auf Llama3.2-Basis ;-)
 
-Dieser Code beschreibt einen dynamischen Nachrichtenassistenten, der Nachrichten von Deutschlandfunk nicht nur abruft, sondern auch intelligent verarbeitet. Er bietet dem Benutzer eine prägnante Zusammenfassung und eine interaktive Frage-Antwort-Funktion. 
-
-Projektstruktur: Das Projekt besteht aus mehreren Verzeichnissen und Dateien, darunter app.py, config.py, agents/, data/ und utils/. Diese Struktur ermöglicht eine klare Trennung der verschiedenen Funktionen und Aufgaben.
+Dieses Projekt gehört zum OpenCampus-Kurs: "From LLMs to Agents" und  beschreibt einen dynamischen Nachrichtenassistenten, der Nachrichten von Deutschlandfunk nicht nur abruft, sondern auch intelligent verarbeitet. Er bietet dem Benutzer eine prägnante Zusammenfassung und eine interaktive Frage-Antwort-Funktion. 
 
 Als Sprachmodell wurde Llama3.2 gewählt - diese kann je nach verfügbarer Hardware auch durch andere Modelle ersetzt werden.
-
-Einrichtung: Die Einrichtung ist einfach und effektiv: Erstellen von __init__.py-Dateien, Einrichten einer virtuellen Umgebung, Installieren von Abhängigkeiten und Starten des Ollama-Servers. So wird sichergestellt, dass alles reibungslos funktioniert.
 
 # Hauptkomponenten
 
