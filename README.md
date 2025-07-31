@@ -47,14 +47,23 @@ Anzeige der Antworten und Wiedergabe der Audioausgabe, was die Nutzung noch ange
 # Hier sind die Linux-Kommandozeilen zum Ausführen des Codes:
 
 cd Downloads/
+
 cd deutschlandfunk_ai_agent/
+
 python3 -m venv .venv
+
 source .venv/bin/activate
+
 pip install --upgrade pip
+
 pip install -r requirements.txt
+
 pip install -U langchain-community
+
 ollama pull llama3.2
+
 touch agents/__init__.py config/__init__.py data/__init__.py utils/__init__.py
+
 streamlit run app.py
 
 
