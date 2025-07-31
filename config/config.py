@@ -1,0 +1,6 @@
+import os
+
+HUGGINGFACEHUB_API_TOKEN = os.getenv("HUGGINGFACEHUB_API_TOKEN", "Put-Your-HuggingFace-Token-here")
+OLLAMA_MODEL_NAME = "llama3.2"
+
+os.environ["HUGGINGFACEHUB_API_TOKEN"] = HUGGINGFACEHUB_API_TOKEN
