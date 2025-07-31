@@ -1,4 +1,6 @@
-# This project is part of the OpenCampus course: "From LLMs to AI Agents" (https://edu.opencampus.sh/course/563) 
+# This project is part of the OpenCampus course: 
+
+"From LLMs to AI Agents" (https://edu.opencampus.sh/course/563) 
 
 The goal is a dynamic news assistant that not only fetches news from Deutschlandfunk but also processes it intelligently. It provides the user with a concise summary and an interactive question-answer function.
 
