@@ -49,7 +49,7 @@ Anzeige der Antworten und Wiedergabe der Audioausgabe, was die Nutzung noch ange
 
 cd Downloads/
 
-cd deutschlandfunk_ai_agent/
+cd newsly/
 
 python3 -m venv .venv
 
