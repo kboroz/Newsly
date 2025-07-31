@@ -1,6 +1,6 @@
 # Newsly aka. Wickert-AI auf Llama3.2-Basis ;-)
 
-Dieses Projekt gehört zum OpenCampus-Kurs: "From LLMs to Agents" und  beschreibt einen dynamischen Nachrichtenassistenten, der Nachrichten von Deutschlandfunk nicht nur abruft, sondern auch intelligent verarbeitet. Er bietet dem Benutzer eine prägnante Zusammenfassung und eine interaktive Frage-Antwort-Funktion. 
+Dieses Projekt gehört zum OpenCampus-Kurs: "From LLMs to AI Agents" (https://edu.opencampus.sh/course/563) und  beschreibt einen dynamischen Nachrichtenassistenten, der Nachrichten von Deutschlandfunk nicht nur abruft, sondern auch intelligent verarbeitet. Er bietet dem Benutzer eine prägnante Zusammenfassung und eine interaktive Frage-Antwort-Funktion. 
 
 Als Sprachmodell wurde Llama3.2 gewählt - diese kann je nach verfügbarer Hardware auch durch andere Modelle ersetzt werden.
 
