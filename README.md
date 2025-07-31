@@ -1,60 +1,55 @@
-# Newsly aka. Wickert-AI auf Llama3.2-Basis ;-)
+# This project is part of the OpenCampus course: "From LLMs to AI Agents" (https://edu.opencampus.sh/course/563) 
 
-Dieses Projekt gehört zum OpenCampus-Kurs: "From LLMs to AI Agents" (https://edu.opencampus.sh/course/563) und  beschreibt einen dynamischen Nachrichtenassistenten, der Nachrichten von Deutschlandfunk nicht nur abruft, sondern auch intelligent verarbeitet. Er bietet dem Benutzer eine prägnante Zusammenfassung und eine interaktive Frage-Antwort-Funktion. 
+The goal is a dynamic news assistant that not only fetches news from Deutschlandfunk but also processes it intelligently. It provides the user with a concise summary and an interactive question-answer function.
 
-Als Sprachmodell wurde Llama3.2 gewählt - diese kann je nach verfügbarer Hardware auch durch andere Modelle ersetzt werden.
+The language model used is Llama3.2 – which can be replaced with other models depending on the available hardware.
 
-# Hauptkomponenten
+# Main Components
 
-config.py: Hier werden wichtige Konfigurationsparameter wie API-Token und Modellnamen zentral verwaltet.
+    config.py: Central management of important configuration parameters such as API tokens and model names.
 
-data/news_fetcher.py: Dieser Teil des Codes holt aktiv die neuesten Nachrichten von Deutschlandfunk und bereitet sie für die weitere Verarbeitung auf.
+    data/news_fetcher.py: This part of the code actively fetches the latest news from Deutschlandfunk and prepares it for further processing.
 
-utils/embeddings.py: Hier wird der abgerufene Text in einen leistungsstarken Vektorenspeicher umgewandelt, der für die spätere Verwendung in der Frage-Antwort-Kette optimiert ist.
+    utils/embeddings.py: Converts the fetched text into a high-performance vector store, optimized for later use in the question-answer chain.
 
-agents/qa_agent.py: Dieser Agent baut eine intelligente Frage-Antwort-Kette auf, die den Vektorenspeicher nutzt, um präzise und schnelle Antworten zu liefern.
+    agents/qa_agent.py: Builds an intelligent question-answer pipeline that uses the vector store to deliver precise and fast answers.
 
-agents/summarizer.py: Dieser Teil fasst den abgerufenen Nachrichtentext prägnant zusammen, sodass der Benutzer schnell einen Überblick erhält.
+    agents/summarizer.py: Summarizes the fetched news text concisely so users can get a quick overview.
 
-utils/text_to_speech.py: Hier wird Text in Audio umgewandelt, um die Antworten nicht nur lesbar, sondern auch hörbar zu machen.
+    utils/text_to_speech.py: Converts text into audio, making the answers not only readable but also audible.
 
-app.py: Die Hauptanwendung nutzt Streamlit, um eine benutzerfreundliche und interaktive Oberfläche bereitzustellen. Sie ruft Nachrichten ab, zeigt eine Zusammenfassung an und ermöglicht es dem Benutzer, Fragen zu stellen.
+    app.py: The main application uses Streamlit to provide a user-friendly and interactive interface. It fetches news, shows a summary, and allows users to ask questions.
 
-# Funktionsweise
+# How It Works
 
-Nachrichtenabruf: Die Anwendung ruft proaktiv die neuesten Nachrichten von Deutschlandfunk ab und speichert sie in einer Variable.
+    News Fetching: The app proactively fetches the latest news from Deutschlandfunk and stores it in a variable.
 
-Vektorenspeicher: Der abgerufene Text wird in einen Vektorenspeicher umgewandelt, um eine effiziente Suche und Abfrage zu ermöglichen. Dies sorgt für schnelle und präzise Antworten.
+    Vector Store: The fetched text is converted into a vector store to enable efficient search and querying. This ensures fast and accurate answers.
 
-Zusammenfassung: Der abgerufene Text wird automatisch zusammengefasst und dem Benutzer angezeigt, sodass er schnell den Überblick behält.
+    Summarization: The fetched text is automatically summarized and displayed to the user, providing a quick overview.
 
-Frage-Antwort-Funktion: Der Benutzer kann Fragen stellen, die von der Frage-Antwort-Kette intelligent beantwortet werden. Die Antwort wird sowohl als Text als auch als Audio ausgegeben, was die Benutzerfreundlichkeit erhöht.
+    Question-Answer Function: Users can ask questions, which are answered intelligently by the QA pipeline. The answer is provided both as text and audio, enhancing usability.
 
-# Benutzeroberfläche
+# User Interface
 
-Die Benutzeroberfläche wird mit Streamlit erstellt und bietet folgende Funktionen:
+The user interface is built with Streamlit and offers the following features:
 
-Anzeige einer prägnanten Zusammenfassung der Nachrichten.
+    Display of a concise summary of the news.
 
-Eingabefeld für Fragen des Benutzers, das zur Interaktion einlädt.
+    Input field for user questions to encourage interaction.
 
-Anzeige der Antworten und Wiedergabe der Audioausgabe, was die Nutzung noch angenehmer macht.
+    Display of answers and playback of the audio output for a more pleasant user experience.
 
-
-# Hier sind die Linux-Kommandozeilen zum Ausführen des Codes:
+# Linux Command Line Instructions to Run the Code:
 
 cd Downloads/
-
 cd newsly/
 
 python3 -m venv .venv
-
 source .venv/bin/activate
 
 pip install --upgrade pip
-
 pip install -r requirements.txt
-
 pip install -U langchain-community
 
 ollama pull llama3.2
@@ -62,6 +57,3 @@ ollama pull llama3.2
 touch agents/__init__.py config/__init__.py data/__init__.py utils/__init__.py
 
 streamlit run app.py
-
-
-
